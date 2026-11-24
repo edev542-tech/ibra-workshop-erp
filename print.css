@@ -1,0 +1,18 @@
+/* تنسيقات الطباعة العامة */
+@media print {
+  body { background: #fff !important; margin: 0; padding: 0; }
+  
+  /* إخفاء عناصر النظام أثناء الطباعة */
+  .topbar, .sidebar, .bottom-nav, .modal-overlay, .toast, .no-print, 
+  .app > .content > .page-header,
+  .content > .card:not(.printable) {
+    display: none !important;
+  }
+  
+  /* إظهار النافذة المنبثقة فقط إذا كانت تحتوي على فاتورة */
+  .modal-overlay { display: flex !important; position: static; background: transparent; }
+  .modal-content { box-shadow: none; border: none; }
+  
+  /* إخفاء أزرار الطباعة */
+  .print-actions { display: none !important; }
+}

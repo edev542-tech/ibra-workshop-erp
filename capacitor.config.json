@@ -1,0 +1,9 @@
+{
+  "appId": "com.ibrasoft.erp",
+  "appName": "IBRA Soft ERP",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false
+  }
+}
